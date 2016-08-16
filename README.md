@@ -90,27 +90,27 @@ public class PeptidecontrollerApiExample {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://wwwdev.ebi.ac.uk/pride/ws/proteomes*
+All URIs are relative to *https://localhost:9190/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *PeptidecontrollerApi* | [**getByIdUsingGET1**](docs/PeptidecontrollerApi.md#getByIdUsingGET1) | **GET** /peptide/{sequence} | getById
 *PeptidecontrollerApi* | [**getPeptideListForProteinUsingGET1**](docs/PeptidecontrollerApi.md#getPeptideListForProteinUsingGET1) | **GET** /peptide/list/protein/{acc} | getPeptideListForProtein
-*PeptidecontrollerApi* | [**getPeptideListUsingGET1**](docs/PeptidecontrollerApi.md#getPeptideListUsingGET1) | **GET** /peptide/list | getPeptideList
-*ProteincontrollerApi* | [**getByIdUsingGET2**](docs/ProteincontrollerApi.md#getByIdUsingGET2) | **GET** /protein/{id} | getById
-*ProteincontrollerApi* | [**getProteinCountUsingGET**](docs/ProteincontrollerApi.md#getProteinCountUsingGET) | **GET** /protein/count | getProteinCount
-*ProteincontrollerApi* | [**getProteinListForPeptideUsingGET1**](docs/ProteincontrollerApi.md#getProteinListForPeptideUsingGET1) | **GET** /protein/list/peptide/{sequence} | getProteinListForPeptide
+*PeptidecontrollerApi* | [**getPeptideListUsingGET**](docs/PeptidecontrollerApi.md#getPeptideListUsingGET) | **GET** /peptide/list | getPeptideList
+*ProteincontrollerApi* | [**getByIdUsingGET3**](docs/ProteincontrollerApi.md#getByIdUsingGET3) | **GET** /protein/{id} | getById
+*ProteincontrollerApi* | [**getProteinCountUsingGET1**](docs/ProteincontrollerApi.md#getProteinCountUsingGET1) | **GET** /protein/count | getProteinCount
+*ProteincontrollerApi* | [**getProteinListForPeptideUsingGET**](docs/ProteincontrollerApi.md#getProteinListForPeptideUsingGET) | **GET** /protein/list/peptide/{sequence} | getProteinListForPeptide
 *ProteincontrollerApi* | [**getProteinListUsingGET1**](docs/ProteincontrollerApi.md#getProteinListUsingGET1) | **GET** /protein/list | getProteinList
-*ProteingroupcontrollerApi* | [**getByIdUsingGET5**](docs/ProteingroupcontrollerApi.md#getByIdUsingGET5) | **GET** /group/{id} | getById
+*ProteingroupcontrollerApi* | [**getByIdUsingGET4**](docs/ProteingroupcontrollerApi.md#getByIdUsingGET4) | **GET** /group/{id} | getById
 *ProteingroupcontrollerApi* | [**getProteinGroupListForProteinUsingGET**](docs/ProteingroupcontrollerApi.md#getProteinGroupListForProteinUsingGET) | **GET** /group/list/protein/{acc} | getProteinGroupListForProtein
-*ProteingroupcontrollerApi* | [**getProteinGroupListUsingGET**](docs/ProteingroupcontrollerApi.md#getProteinGroupListUsingGET) | **GET** /group/list | getProteinGroupList
-*ReleasecontrollerApi* | [**getReleaseSummaryForSpeciesUsingGET**](docs/ReleasecontrollerApi.md#getReleaseSummaryForSpeciesUsingGET) | **GET** /release/summary/species/{species} | getReleaseSummaryForSpecies
-*ReleasecontrollerApi* | [**getReleaseSummaryUsingGET1**](docs/ReleasecontrollerApi.md#getReleaseSummaryUsingGET1) | **GET** /release/summary/list | getReleaseSummary
+*ProteingroupcontrollerApi* | [**getProteinGroupListUsingGET1**](docs/ProteingroupcontrollerApi.md#getProteinGroupListUsingGET1) | **GET** /group/list | getProteinGroupList
+*ReleasecontrollerApi* | [**getReleaseSummaryForSpeciesUsingGET1**](docs/ReleasecontrollerApi.md#getReleaseSummaryForSpeciesUsingGET1) | **GET** /release/summary/species/{species} | getReleaseSummaryForSpecies
+*ReleasecontrollerApi* | [**getReleaseSummaryUsingGET**](docs/ReleasecontrollerApi.md#getReleaseSummaryUsingGET) | **GET** /release/summary/list | getReleaseSummary
 *SamplecontrollerApi* | [**countTissuesUsingGET**](docs/SamplecontrollerApi.md#countTissuesUsingGET) | **GET** /sample/tissues/count/species/{species} | countTissues
 *SamplecontrollerApi* | [**getSpeciesUsingGET1**](docs/SamplecontrollerApi.md#getSpeciesUsingGET1) | **GET** /sample/species | getSpecies
-*SamplecontrollerApi* | [**getTissuesUsingGET1**](docs/SamplecontrollerApi.md#getTissuesUsingGET1) | **GET** /sample/tissues/list/species/{species} | getTissues
+*SamplecontrollerApi* | [**getTissuesUsingGET**](docs/SamplecontrollerApi.md#getTissuesUsingGET) | **GET** /sample/tissues/list/species/{species} | getTissues
 *SamplecontrollerApi* | [**getTissuesUsingGET3**](docs/SamplecontrollerApi.md#getTissuesUsingGET3) | **GET** /sample/tissues/list | getTissues
-*StatisticscontrollerApi* | [**getSummaryUsingGET**](docs/StatisticscontrollerApi.md#getSummaryUsingGET) | **GET** /stats/summary | getSummary
+*StatisticscontrollerApi* | [**getSummaryUsingGET1**](docs/StatisticscontrollerApi.md#getSummaryUsingGET1) | **GET** /stats/summary | getSummary
 
 
 ## Documentation for Models

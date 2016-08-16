@@ -1,12 +1,12 @@
 # PeptidecontrollerApi
 
-All URIs are relative to *https://wwwdev.ebi.ac.uk/pride/ws/proteomes*
+All URIs are relative to *https://localhost:9190/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getByIdUsingGET1**](PeptidecontrollerApi.md#getByIdUsingGET1) | **GET** /peptide/{sequence} | getById
 [**getPeptideListForProteinUsingGET1**](PeptidecontrollerApi.md#getPeptideListForProteinUsingGET1) | **GET** /peptide/list/protein/{acc} | getPeptideListForProtein
-[**getPeptideListUsingGET1**](PeptidecontrollerApi.md#getPeptideListUsingGET1) | **GET** /peptide/list | getPeptideList
+[**getPeptideListUsingGET**](PeptidecontrollerApi.md#getPeptideListUsingGET) | **GET** /peptide/list | getPeptideList
 
 
 <a name="getByIdUsingGET1"></a>
@@ -107,9 +107,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getPeptideListUsingGET1"></a>
-# **getPeptideListUsingGET1**
-> PeptideList getPeptideListUsingGET1(species, tissue, mod, page, pageSize)
+<a name="getPeptideListUsingGET"></a>
+# **getPeptideListUsingGET**
+> PeptideList getPeptideListUsingGET(species, tissue, mod, page, pageSize)
 
 getPeptideList
 
@@ -127,10 +127,10 @@ String mod = "any"; // String | mod
 Integer page = 0; // Integer | page
 Integer pageSize = 100; // Integer | pageSize
 try {
-    PeptideList result = apiInstance.getPeptideListUsingGET1(species, tissue, mod, page, pageSize);
+    PeptideList result = apiInstance.getPeptideListUsingGET(species, tissue, mod, page, pageSize);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling PeptidecontrollerApi#getPeptideListUsingGET1");
+    System.err.println("Exception when calling PeptidecontrollerApi#getPeptideListUsingGET");
     e.printStackTrace();
 }
 ```

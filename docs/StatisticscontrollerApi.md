@@ -1,15 +1,15 @@
 # StatisticscontrollerApi
 
-All URIs are relative to *https://wwwdev.ebi.ac.uk/pride/ws/proteomes*
+All URIs are relative to *https://localhost:9190/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getSummaryUsingGET**](StatisticscontrollerApi.md#getSummaryUsingGET) | **GET** /stats/summary | getSummary
+[**getSummaryUsingGET1**](StatisticscontrollerApi.md#getSummaryUsingGET1) | **GET** /stats/summary | getSummary
 
 
-<a name="getSummaryUsingGET"></a>
-# **getSummaryUsingGET**
-> Statistics getSummaryUsingGET()
+<a name="getSummaryUsingGET1"></a>
+# **getSummaryUsingGET1**
+> Statistics getSummaryUsingGET1()
 
 getSummary
 
@@ -22,10 +22,10 @@ getSummary
 
 StatisticscontrollerApi apiInstance = new StatisticscontrollerApi();
 try {
-    Statistics result = apiInstance.getSummaryUsingGET();
+    Statistics result = apiInstance.getSummaryUsingGET1();
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling StatisticscontrollerApi#getSummaryUsingGET");
+    System.err.println("Exception when calling StatisticscontrollerApi#getSummaryUsingGET1");
     e.printStackTrace();
 }
 ```

@@ -1,16 +1,16 @@
 # ReleasecontrollerApi
 
-All URIs are relative to *https://wwwdev.ebi.ac.uk/pride/ws/proteomes*
+All URIs are relative to *https://localhost:9190/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getReleaseSummaryForSpeciesUsingGET**](ReleasecontrollerApi.md#getReleaseSummaryForSpeciesUsingGET) | **GET** /release/summary/species/{species} | getReleaseSummaryForSpecies
-[**getReleaseSummaryUsingGET1**](ReleasecontrollerApi.md#getReleaseSummaryUsingGET1) | **GET** /release/summary/list | getReleaseSummary
+[**getReleaseSummaryForSpeciesUsingGET1**](ReleasecontrollerApi.md#getReleaseSummaryForSpeciesUsingGET1) | **GET** /release/summary/species/{species} | getReleaseSummaryForSpecies
+[**getReleaseSummaryUsingGET**](ReleasecontrollerApi.md#getReleaseSummaryUsingGET) | **GET** /release/summary/list | getReleaseSummary
 
 
-<a name="getReleaseSummaryForSpeciesUsingGET"></a>
-# **getReleaseSummaryForSpeciesUsingGET**
-> ReleaseSummary getReleaseSummaryForSpeciesUsingGET(species)
+<a name="getReleaseSummaryForSpeciesUsingGET1"></a>
+# **getReleaseSummaryForSpeciesUsingGET1**
+> ReleaseSummary getReleaseSummaryForSpeciesUsingGET1(species)
 
 getReleaseSummaryForSpecies
 
@@ -22,12 +22,12 @@ getReleaseSummaryForSpecies
 
 
 ReleasecontrollerApi apiInstance = new ReleasecontrollerApi();
-String species = "9606"; // String | species
+String species = "species_example"; // String | species
 try {
-    ReleaseSummary result = apiInstance.getReleaseSummaryForSpeciesUsingGET(species);
+    ReleaseSummary result = apiInstance.getReleaseSummaryForSpeciesUsingGET1(species);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling ReleasecontrollerApi#getReleaseSummaryForSpeciesUsingGET");
+    System.err.println("Exception when calling ReleasecontrollerApi#getReleaseSummaryForSpeciesUsingGET1");
     e.printStackTrace();
 }
 ```
@@ -36,7 +36,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **species** | **String**| species | [optional] [default to 9606]
+ **species** | **String**| species |
 
 ### Return type
 
@@ -51,9 +51,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getReleaseSummaryUsingGET1"></a>
-# **getReleaseSummaryUsingGET1**
-> ReleaseSummaryList getReleaseSummaryUsingGET1()
+<a name="getReleaseSummaryUsingGET"></a>
+# **getReleaseSummaryUsingGET**
+> ReleaseSummaryList getReleaseSummaryUsingGET()
 
 getReleaseSummary
 
@@ -66,10 +66,10 @@ getReleaseSummary
 
 ReleasecontrollerApi apiInstance = new ReleasecontrollerApi();
 try {
-    ReleaseSummaryList result = apiInstance.getReleaseSummaryUsingGET1();
+    ReleaseSummaryList result = apiInstance.getReleaseSummaryUsingGET();
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling ReleasecontrollerApi#getReleaseSummaryUsingGET1");
+    System.err.println("Exception when calling ReleasecontrollerApi#getReleaseSummaryUsingGET");
     e.printStackTrace();
 }
 ```

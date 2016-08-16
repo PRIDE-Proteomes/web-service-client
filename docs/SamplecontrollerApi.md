@@ -1,12 +1,12 @@
 # SamplecontrollerApi
 
-All URIs are relative to *https://wwwdev.ebi.ac.uk/pride/ws/proteomes*
+All URIs are relative to *https://localhost:9190/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**countTissuesUsingGET**](SamplecontrollerApi.md#countTissuesUsingGET) | **GET** /sample/tissues/count/species/{species} | countTissues
 [**getSpeciesUsingGET1**](SamplecontrollerApi.md#getSpeciesUsingGET1) | **GET** /sample/species | getSpecies
-[**getTissuesUsingGET1**](SamplecontrollerApi.md#getTissuesUsingGET1) | **GET** /sample/tissues/list/species/{species} | getTissues
+[**getTissuesUsingGET**](SamplecontrollerApi.md#getTissuesUsingGET) | **GET** /sample/tissues/list/species/{species} | getTissues
 [**getTissuesUsingGET3**](SamplecontrollerApi.md#getTissuesUsingGET3) | **GET** /sample/tissues/list | getTissues
 
 
@@ -92,9 +92,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getTissuesUsingGET1"></a>
-# **getTissuesUsingGET1**
-> TissueList getTissuesUsingGET1(species)
+<a name="getTissuesUsingGET"></a>
+# **getTissuesUsingGET**
+> TissueList getTissuesUsingGET(species)
 
 getTissues
 
@@ -108,10 +108,10 @@ getTissues
 SamplecontrollerApi apiInstance = new SamplecontrollerApi();
 String species = "9606"; // String | species
 try {
-    TissueList result = apiInstance.getTissuesUsingGET1(species);
+    TissueList result = apiInstance.getTissuesUsingGET(species);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling SamplecontrollerApi#getTissuesUsingGET1");
+    System.err.println("Exception when calling SamplecontrollerApi#getTissuesUsingGET");
     e.printStackTrace();
 }
 ```

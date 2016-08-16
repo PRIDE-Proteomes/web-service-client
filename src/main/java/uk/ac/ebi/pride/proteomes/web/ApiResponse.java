@@ -25,36 +25,47 @@
 
 package uk.ac.ebi.pride.proteomes.web;
 
-import uk.ac.ebi.pride.proteomes.web.ApiException;
-import uk.ac.ebi.pride.proteomes.web.client.Statistics;
-import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 /**
- * API tests for StatisticscontrollerApi
+ * API response returned by API call.
+ *
+ * @param T The type of data that is deserialized from response body
  */
-public class StatisticscontrollerApiTest {
+public class ApiResponse<T> {
+    final private int statusCode;
+    final private Map<String, List<String>> headers;
+    final private T data;
 
-    private final StatisticscontrollerApi api = new StatisticscontrollerApi();
-
-    
     /**
-     * getSummary
-     *
-     * 
-     *
-     * @throws ApiException
-     *          if the Api call fails
+     * @param statusCode The status code of HTTP response
+     * @param headers The headers of HTTP response
      */
-    @Test
-    public void getSummaryUsingGET1Test() throws ApiException {
-        // Statistics response = api.getSummaryUsingGET1();
-
-        // TODO: test validations
+    public ApiResponse(int statusCode, Map<String, List<String>> headers) {
+        this(statusCode, headers, null);
     }
-    
+
+    /**
+     * @param statusCode The status code of HTTP response
+     * @param headers The headers of HTTP response
+     * @param data The object deserialized from response bod
+     */
+    public ApiResponse(int statusCode, Map<String, List<String>> headers, T data) {
+        this.statusCode = statusCode;
+        this.headers = headers;
+        this.data = data;
+    }
+
+    public int getStatusCode() {
+        return statusCode;
+    }
+
+    public Map<String, List<String>> getHeaders() {
+        return headers;
+    }
+
+    public T getData() {
+        return data;
+    }
 }

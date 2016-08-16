@@ -1,18 +1,18 @@
 # ProteincontrollerApi
 
-All URIs are relative to *https://wwwdev.ebi.ac.uk/pride/ws/proteomes*
+All URIs are relative to *https://localhost:9190/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getByIdUsingGET2**](ProteincontrollerApi.md#getByIdUsingGET2) | **GET** /protein/{id} | getById
-[**getProteinCountUsingGET**](ProteincontrollerApi.md#getProteinCountUsingGET) | **GET** /protein/count | getProteinCount
-[**getProteinListForPeptideUsingGET1**](ProteincontrollerApi.md#getProteinListForPeptideUsingGET1) | **GET** /protein/list/peptide/{sequence} | getProteinListForPeptide
+[**getByIdUsingGET3**](ProteincontrollerApi.md#getByIdUsingGET3) | **GET** /protein/{id} | getById
+[**getProteinCountUsingGET1**](ProteincontrollerApi.md#getProteinCountUsingGET1) | **GET** /protein/count | getProteinCount
+[**getProteinListForPeptideUsingGET**](ProteincontrollerApi.md#getProteinListForPeptideUsingGET) | **GET** /protein/list/peptide/{sequence} | getProteinListForPeptide
 [**getProteinListUsingGET1**](ProteincontrollerApi.md#getProteinListUsingGET1) | **GET** /protein/list | getProteinList
 
 
-<a name="getByIdUsingGET2"></a>
-# **getByIdUsingGET2**
-> Protein getByIdUsingGET2(id, includeDetails)
+<a name="getByIdUsingGET3"></a>
+# **getByIdUsingGET3**
+> Protein getByIdUsingGET3(id, includeDetails)
 
 getById
 
@@ -27,10 +27,10 @@ ProteincontrollerApi apiInstance = new ProteincontrollerApi();
 String id = "id_example"; // String | id
 Boolean includeDetails = true; // Boolean | includeDetails
 try {
-    Protein result = apiInstance.getByIdUsingGET2(id, includeDetails);
+    Protein result = apiInstance.getByIdUsingGET3(id, includeDetails);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling ProteincontrollerApi#getByIdUsingGET2");
+    System.err.println("Exception when calling ProteincontrollerApi#getByIdUsingGET3");
     e.printStackTrace();
 }
 ```
@@ -55,9 +55,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getProteinCountUsingGET"></a>
-# **getProteinCountUsingGET**
-> Long getProteinCountUsingGET(species, tissue, mod)
+<a name="getProteinCountUsingGET1"></a>
+# **getProteinCountUsingGET1**
+> Long getProteinCountUsingGET1(species, tissue, mod)
 
 getProteinCount
 
@@ -73,10 +73,10 @@ String species = "9606"; // String | species
 String tissue = "any"; // String | tissue
 String mod = "any"; // String | mod
 try {
-    Long result = apiInstance.getProteinCountUsingGET(species, tissue, mod);
+    Long result = apiInstance.getProteinCountUsingGET1(species, tissue, mod);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling ProteincontrollerApi#getProteinCountUsingGET");
+    System.err.println("Exception when calling ProteincontrollerApi#getProteinCountUsingGET1");
     e.printStackTrace();
 }
 ```
@@ -102,9 +102,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getProteinListForPeptideUsingGET1"></a>
-# **getProteinListForPeptideUsingGET1**
-> ProteinList getProteinListForPeptideUsingGET1(sequence, species, includeSequence)
+<a name="getProteinListForPeptideUsingGET"></a>
+# **getProteinListForPeptideUsingGET**
+> ProteinList getProteinListForPeptideUsingGET(sequence, species, includeSequence)
 
 getProteinListForPeptide
 
@@ -120,10 +120,10 @@ String sequence = "sequence_example"; // String | sequence
 Integer species = 9606; // Integer | species
 Boolean includeSequence = false; // Boolean | includeSequence
 try {
-    ProteinList result = apiInstance.getProteinListForPeptideUsingGET1(sequence, species, includeSequence);
+    ProteinList result = apiInstance.getProteinListForPeptideUsingGET(sequence, species, includeSequence);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling ProteincontrollerApi#getProteinListForPeptideUsingGET1");
+    System.err.println("Exception when calling ProteincontrollerApi#getProteinListForPeptideUsingGET");
     e.printStackTrace();
 }
 ```
